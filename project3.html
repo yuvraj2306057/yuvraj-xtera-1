@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="screen.css">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: #f0f8ff;
+            font-family: "Roboto",sans-serif;
+        }
+        
+        .img1{
+            height: 20rem;
+            width:33.19125rem;
+        }
+        .img2{
+            height: 20rem;
+            width: 33.19125rem;
+        }
+        .img3{
+            height: 20rem;
+            width: 33.19125rem;
+        }
+        .img4{
+            height: 20rem;
+            width: 33.19125rem;
+        }
+        .container{
+           
+            display: flex;
+            
+            
+        }
+        
+        .image{
+            width:100%;
+            margin-left:100px;
+            
+            margin-top: 120px;
+        
+        }
+        .img1{
+            transition-duration: 1s; 
+        }
+        .img1:hover{
+      transform: rotateY(180deg);
+      
+        }
+         .img2{
+            transition-duration: 1s; 
+        }
+        .img2:hover{
+      transform: rotateY(180deg);
+      
+        }
+         .img3{
+            transition-duration: 1s; 
+        }
+        .img3:hover{
+      transform: rotateY(180deg);
+      
+        }
+        .img4{
+            transition-duration: 1s; 
+        }
+        .img4:hover{
+      transform: rotateY(180deg);
+      
+        }
+        .content{
+            margin-left: 150px;
+        }
+        .header{
+            font-weight: bold;
+            font-size: 150%;
+           width:32vw;
+           height:7vh;
+           margin-top:58px;
+           margin-left: 23px;
+        }
+        .header:hover{
+            color:rgb(64, 61, 61);
+        }
+       .heading{
+        margin-top: 46px;
+        font-size: 1.2rem;
+        font-weight: 800;
+        
+       }
+       .heading:hover{
+        color:rgb(64, 61, 61);
+        
+       }
+        .heading2{
+            cursor: pointer;
+            font-size: 300%;
+             font-weight: 300;
+             width: 30vw;
+             height: 30vh;
+             line-height: 1.2em;
+             transition-duration:0.3s; 
+   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);       
+             margin-top:19px;
+        }
+        .heading2:hover{
+        transform:scale(1.2);
+       }
+        .heading3{
+            font-size: 1.1rem;
+    font-weight: 500;
+
+    
+    margin-top: 6px;
+}
+.heading4{
+    font-size: 300%;
+    font-weight:300;
+    width:30vw;
+    height:15vh;
+    margin-top: 25px;
+    transition-duration:0.3s; 
+   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);   
+}
+.heading4:hover{
+    transform:scale(1.2);
+}
+.heading5{
+    margin-top: 7px;
+    font-weight: 500;
+}
+.heading6{
+    font-size: 1.2rem;
+        font-weight: 800; 
+        margin-top: 34px;
+        margin-bottom: 20px;
+}
+.heading6:hover{
+    color:rgb(59, 54, 54);
+}
+
+.btn{
+    margin-left: 143px;
+    margin-bottom: 90px;
+    width:8.2rem;
+    height:42px;
+    background-color:brown;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <h>Lets Collaborate</h>
+            </div>
+            <div class="heading2 anim first">AI + RPA is what we do</div>
+        
+        <div class="heading3 anim second">
+            Future-Proof your business. Drive efficiency, <br>profitability and deliver on customer experience.
+        </div>
+        <div class="heading anim third">AI + RPA Automation &rarr;</div>
+        <div class="heading2 anim fourth">Make Bolder choices</div>
+        <div class="heading3 anim fivth">
+            Digital focused strategies to realize market-changing ideas
+        </div>
+        <div class="heading anim sixth">
+            Buid Better Apps &rarr;
+        </div>
+        <div class="heading2 anim seventh">Innovate With Speed</div>
+        <div class="heading3 anim eighth">
+            Create higher quality software, deliver on customer expectations and business goals
+        </div>
+        <div class="heading anim ninth">
+            Devops &rarr;
+        </div>
+        <div class="heading4 anim tenth">
+            Embrace  Cloud
+        </div>
+        <div class="heading5 anim eleventh">
+            With Cloud-First accelerate innovation and optimize performance
+        </div>
+        <div class="heading6 anim twelth">
+            cloud Services &rarr;
+        </div>
+        </div>
+        <div class="image">
+            <img src="hackslashimg.png" alt="reload" class="img1 anim">
+            <img src="hackslahimg2.png" alt="reload" class="img2 anim">
+            <img src="hackslashimg3.png" alt="reload" class="img3 anim">
+            <img src="hackslashimg4.png" alt="reload" class="img4 anim">
+        </div>
+    </div>
+    
+    <button class="btn" onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+</body>
+</html>
